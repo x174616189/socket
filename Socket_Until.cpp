@@ -3,7 +3,7 @@
 ssize_t SUntil::readn(int fd, char *str, size_t n) {
 	size_t nleft;
 	ssize_t nread;
-	const char *p = str;
+	char *p = str;
 
 	nleft = n;
 	while(nleft > 0) {
